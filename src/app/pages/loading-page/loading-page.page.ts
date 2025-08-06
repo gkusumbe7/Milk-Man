@@ -16,8 +16,8 @@ export class LoadingPagePage implements OnInit {
 
   ngOnInit() {
     setTimeout(()=>{
-      this.router.navigateByUrl('/tabs/home' ,{replaceUrl:true});
-    }, 10000);
+      this.router.navigateByUrl('tabs' ,{replaceUrl:true});
+    }, 1000);
   }
 
 }

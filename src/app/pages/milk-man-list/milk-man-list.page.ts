@@ -2,13 +2,14 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { IonContent, IonHeader, IonTitle, IonToolbar, IonCard, IonList, IonAvatar, IonLabel, IonItem } from '@ionic/angular/standalone';
+import { TabsPage } from "src/app/shared/tabs/tabs.page";
 
 @Component({
   selector: 'app-milk-man-list',
   templateUrl: './milk-man-list.page.html',
   styleUrls: ['./milk-man-list.page.scss'],
   standalone: true,
-  imports: [IonItem, IonLabel, IonAvatar, IonList, IonCard, IonContent, IonHeader, IonTitle, IonToolbar, CommonModule, FormsModule]
+  imports: [IonItem, IonLabel, IonAvatar, IonList, IonCard, IonContent, IonTitle, CommonModule, FormsModule]
 })
 export class MilkManListPage implements OnInit {
 
