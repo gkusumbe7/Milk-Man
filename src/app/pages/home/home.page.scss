@@ -1,4 +1,21 @@
 
+::ng-deep ion-header,
+::ng-deep ion-toolbar {
+  --background: transparent !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
+.gradient-background {
+  --background: linear-gradient(to left, #a6f2f9, #dfbbfb) !important;
+  background: linear-gradient(to left, #a6f2f9, #dfbbfb) !important;
+}
+
+
+
+
+
 ion-content {
   --background: linear-gradient(to left, #a6f2f9, #dfbbfb);
   /* ✅ Gradient background */

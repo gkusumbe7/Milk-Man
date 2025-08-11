@@ -1,0 +1,29 @@
+.gradient-tab-bar.rounded-tab-bar {
+  /* Kill Ionic's default white background */
+  --background: transparent !important;
+  background: linear-gradient(90deg, #a6f2f9, #dfbbfb) !important;
+
+  /* Rounded pill look */
+  border-radius: 50px;
+  margin: 0 10px 10px;
+  height: 60px;
+  overflow: hidden;
+
+  /* Shadow */
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px,
+              rgba(14, 30, 37, 0.32) 0px 2px 16px;
+
+  /* Force override Ionic's background inside shadow DOM */
+  &::part(container) {
+    background: transparent !important;
+  }
+
+  ion-tab-button {
+    --color: white;
+    --color-selected: white;
+  }
+
+  ion-icon {
+    font-size: 22px;
+  }
+}
